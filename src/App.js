@@ -2,12 +2,11 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import './App.css';
-import Footer from "./Component/Footer/Footer";
-import LoginForm from "./View/LoginForm/LoginForm";
-import Navbar from "./Component/Navbar/Navbar";
-import Home from "./View/Home/Home";
+import Main from "./View/Main/Main";
+import CreateAccount from "./View/CreateAccount/CreateAccount";
+import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
+import SignIn from "./View/SignIn/SignIn";
 
-;
 
 
 function App() {
@@ -17,11 +16,15 @@ function App() {
 
 
                 <Routes>
-                    <Route path="/home" element={<Home/>}/>
-                    <Route path="/loginForm" element={<LoginForm/>}/>
+                    <Route path="/" element={<Main/>}/>
+                    <Route path="/createAccount" element={<CreateAccount/>}/>
+                    <Route path="/emailVerification" element={<EmailVerification/>}/>
+                    <Route path="/signIn" element={<SignIn/>}/>
+
 
                 </Routes>
-                <Footer/>
+
+
             </Router>
 
         </>
