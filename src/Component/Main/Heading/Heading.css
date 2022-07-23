@@ -1,0 +1,47 @@
+.heading-img {
+    width: 100%;
+    background-size: cover;
+
+}
+
+.heading-description     {
+    width: 40%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    right: 8%;
+}
+
+.heading-h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+
+}
+.sub-heading-dis{
+    text-align: center;
+}
+
+.heading-main-div {
+    width: 100%;
+}
+.discription {
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+.heading-register-btn{
+    width: 30%;
+    height: 50px;
+
+    margin-left: 35%;
+    border-radius: 20px;
+    color: #004145;
+    border-style: none;
+    box-shadow: black;
+}
