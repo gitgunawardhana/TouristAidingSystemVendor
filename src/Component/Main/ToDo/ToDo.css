@@ -1,0 +1,38 @@
+.todo-div {
+    margin-top: 60px;
+
+}
+
+.todo-heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.img-div {
+    height: 250px;
+    width: 200px;
+    background-color: #03676E;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.img-sub {
+    margin-top: 60px;
+    width: 70px;
+}
+
+.img-des {
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.todo-sub-div{
+
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-left: 20%;
+}
