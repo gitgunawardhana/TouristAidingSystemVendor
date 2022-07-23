@@ -1,0 +1,19 @@
+.Provide-main-div{
+    margin-top: 100px;
+    
+}
+.provide-img{
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+}
+.description-heading{
+    text-transform: uppercase;
+    top: 20px;
+
+}
+.sub-img-div{
+
+    align-items: center;
+
+}
