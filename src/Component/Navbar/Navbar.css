@@ -1,48 +1,49 @@
-.bg-color {
-    background-color: #1e3d3e;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+/*.bg-color {*/
+/*  background-color: #1e3d3e;*/
+/*  padding-top: 20px;*/
+/*  padding-bottom: 20px;*/
+/*}*/
 
-.item-color {
-    color: white !important;
-    font-weight: revert !important;
-}
+/*.item-color {*/
+/*  color: white !important;*/
+/*  font-weight: revert !important;*/
+/*}*/
 
-.item-color:hover {
-    color: white !important;
-}
+/*.item-color:hover {*/
+/*  color: white !important;*/
+/*}*/
 
-.fa-shopping-cart,
-.fa-bell {
-    color: white;
-}
+/*.fa-shopping-cart,*/
+/*.fa-bell {*/
+/*  color: white;*/
+/*}*/
 
-.customize-navbar {
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-}
+/*.customize-navbar {*/
+/*  top: 0;*/
+/*  width: 100%;*/
+/*  z-index: 10;*/
+/*  position: fixed;*/
+/*}*/
 
-.pa {
-    margin-bottom: 80px;
-    z-index: 10;
-}
+/*.pa {*/
+/*  margin-bottom: 80px;*/
+/*  z-index: 10;*/
+/*}*/
 
-.sign-up-btn{
-    width: 140px !important;
-}
+/*.sign-up-btn{*/
+/*width: 140px !important;*/
+/*}*/
 
-.login-btn{
-    font-weight: bold !important;
-    text-decoration: none;
-    color: white !important;
-    margin-left: 10px;
-}
+/*.login-btn{*/
+/*  font-weight: bold !important;*/
+/*  text-decoration: none;*/
+/*  color: white !important;*/
+/*  margin-left: 10px;*/
+/*}*/
 
-@media(max-width:393px) {
-    .sign-btn-set{
-        float: right !important;
-    }
-}
+/*@media(max-width:393px) {*/
+/*.sign-btn-set{*/
+/*  float: right !important;*/
+/*}*/
+/*}*/
+
