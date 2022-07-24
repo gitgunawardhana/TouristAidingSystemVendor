@@ -7,6 +7,7 @@ import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
 import AccommodationRegistrationFacilities from "./View/AccommodationRegistrationFacilities/AccommodationRegistrationFacilities";
 import AccommodationRegistrationPhotos from "./View/AccommodationRegistrationPhotos/AccommodationRegistrationPhotos";
+import AccomodationRegistrationHouseRules from "./View/AccomodationRegistrationHouseRules/AccomodationRegistrationHouseRules";
 import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
@@ -28,6 +29,14 @@ function App() {
           <Route path="/photos" element={<AccommodationRegistrationPhotos />} />
           <Route path="/facilities" element={<AccommodationRegistrationFacilities />}/>
           <Route path="/location" element={<AccommodationRegistrationLocation />} />
+          <Route
+            path="/facilities"
+            element={<AccommodationRegistrationFacilities />}
+          />
+          <Route
+            path="/houserules"
+            element={<AccomodationRegistrationHouseRules />}
+          />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
 
         </Routes>
