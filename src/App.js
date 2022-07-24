@@ -3,12 +3,13 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./App.css";
 import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
+import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
+import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
+import AccommodationRegistrationPhotos from "./View/AccommodationRegistrationPhotos/AccommodationRegistrationPhotos";
 import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
 import VenderType from "./View/VenderType/VenderType";
-import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
-import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 
 function App() {
   return (
@@ -20,9 +21,13 @@ function App() {
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vender-type" element={<VenderType />} />
-          <Route path="/basicDetails" element={<AccommodationRegistrationBasicDetails/>}/>
-          <Route path="/regPageNavbar" element={<RegPageNavbar/>}/>
-          </Routes>
+          <Route
+            path="/basicDetails"
+            element={<AccommodationRegistrationBasicDetails />}
+          />
+          <Route path="/photos" element={<AccommodationRegistrationPhotos />} />
+          <Route path="/regPageNavbar" element={<RegPageNavbar />} />
+        </Routes>
       </Router>
     </>
   );
