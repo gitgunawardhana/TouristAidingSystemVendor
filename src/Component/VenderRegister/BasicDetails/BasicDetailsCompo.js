@@ -9,22 +9,7 @@ function BasicDetailsCompo() {
         <>
             <div className="container-xl px-4 mt-4 ">
                 {/*// <!-- Account page navigation-->*/}
-                <div className="d-flex justify-content-center">
 
-
-                    <nav className="nav nav-borders nav-border  nav-fill  border w-75 p-3  ">
-                        <Link to="/basicdetails" className="nav-link  ms-0 nav-bar-link active"
-                        >Basics details</Link>
-                        <Link to="/basicdetails" className="nav-link nav-bar-link"
-                        >Location</Link>
-                        <Link to="/basicdetails" className="nav-link nav-bar-link "
-                        >House Rules</Link>
-                        <Link to="/basicdetails" className="nav-link nav-bar-link"
-                        >Facilities
-                        </Link><Link to="/basicdetails" className="nav-link nav-bar-link"
-                    >Photos</Link>
-                    </nav>
-                </div>
                 <div className="heading-div ">
                     <p className="font-weight-bold heading-basic d-flex  justify-content-center">
                         Match your property to the right travelers.
