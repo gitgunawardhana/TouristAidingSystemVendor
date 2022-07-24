@@ -11,6 +11,8 @@ import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
 import VenderType from "./View/VenderType/VenderType";
+import AccommodationRegistrationLocation
+  from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
 
 function App() {
   return (
@@ -22,16 +24,12 @@ function App() {
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vender-type" element={<VenderType />} />
-          <Route
-            path="/basicDetails"
-            element={<AccommodationRegistrationBasicDetails />}
-          />
+          <Route path="/basicDetails" element={<AccommodationRegistrationBasicDetails />}/>
           <Route path="/photos" element={<AccommodationRegistrationPhotos />} />
-          <Route
-            path="/facilities"
-            element={<AccommodationRegistrationFacilities />}
-          />
+          <Route path="/facilities" element={<AccommodationRegistrationFacilities />}/>
+          <Route path="/location" element={<AccommodationRegistrationLocation />} />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
+
         </Routes>
       </Router>
     </>
