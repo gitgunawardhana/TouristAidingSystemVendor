@@ -1,5 +1,7 @@
+import Button from "@mui/material/Button";
 import React from "react";
-import "./FormCompo";
+import Upload from "../../../../Assets/BasicDetails/Upload.png";
+import "./FormCompo.css";
 
 function FormCompo() {
   return (
@@ -15,51 +17,36 @@ function FormCompo() {
                       className=" mb-7 fw-normal fs-5 label-color"
                       htmlFor="currentPassword"
                     >
-                      Name your property name{" "}
+                      Property Photos
                     </label>
                     <br />
                     <label
                       className="small mb-2 fw-light"
                       htmlFor="currentPassword"
                     >
-                      Make it count, and make it sound inviting!
+                      The building's exterior, parking space(s), entrance, and
+                      any available facilities
                     </label>
-                    <input
-                      className="form-control"
-                      id="currentPassword"
-                      type="password"
-                      placeholder="Property name"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label
-                      className=" mb-7 fw-normal fs-5 label-color"
-                      htmlFor="currentPassword"
-                    >
-                      Describe your place{" "}
-                    </label>
-                    <br />
-                    <label
-                      className="small mb-2 fw-light"
-                      htmlFor="currentPassword"
-                    >
-                      Why should a traveler choose to stay at your property?
-                    </label>
-                    <textarea
-                      class="form-control"
-                      id="currentPassword"
-                      type="password"
-                      placeholder="Example:
-                          &#10;
-                          •	5- minite walk to/ from public transportation
-                          &#10;
-                          •	family - friendly
-                          &#10;
-                          •	Big open space, with amazing views and natural light
-                          &#10;
-                          "
-                      rows="10"
-                    />
+                    <div className="content-file-upload text-center">
+                      <img src={Upload} alt="Upload File" />
+                      <p className="small mb-2 fw-light">
+                        Drag and drop your pics here
+                      </p>
+                      <Button
+                        variant="contained"
+                        component="label"
+                        sx={{
+                          backgroundColor: "#03676E",
+                          "&:hover": {
+                            backgroundColor: "#07b89d",
+                            color: "white",
+                          },
+                        }}
+                      >
+                        UPLOAD PHOTOS
+                        <input type="file" hidden />
+                      </Button>
+                    </div>
                   </div>
                 </form>
               </div>
