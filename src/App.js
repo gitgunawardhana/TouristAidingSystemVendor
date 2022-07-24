@@ -19,6 +19,9 @@ import VehicleRegVehicle from '../src/View/VehicleRegistrationVehicleDetails/Veh
 import VehicleRegPhotos from '../src/View/VehicleRegistrationPhoto/VehicleRegistrationPhoto.js'
 // import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
 import VehicleRegDriverInfo from '../src/View/VehicleRegDriverDetails/VehicleRegDriverDetails.js'
+import AccommodationRegistrationLocation
+  from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
+
 function App() {
   return (
     <>
@@ -31,6 +34,7 @@ function App() {
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vender-type" element={<VenderType />} />
+          <Route path="/basicDetails" element={<AccommodationRegistrationBasicDetails />}/>
           <Route path="/vender-vehicle-reg-info" element={<VehicleRegInfo />} />
           <Route path="/vender-vehicle-reg-vehicle" element={< VehicleRegVehicle />} />
           <Route path="/vender-vehicle-reg-photo" element={< VehicleRegPhotos />} />
@@ -41,6 +45,8 @@ function App() {
             element={<AccommodationRegistrationBasicDetails />}
           />
           <Route path="/photos" element={<AccommodationRegistrationPhotos />} />
+          <Route path="/facilities" element={<AccommodationRegistrationFacilities />}/>
+          <Route path="/location" element={<AccommodationRegistrationLocation />} />
           <Route
             path="/facilities"
             element={<AccommodationRegistrationFacilities />}
@@ -50,6 +56,7 @@ function App() {
             element={<AccomodationRegistrationHouseRules />}
           />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
+
         </Routes>
       </Router>
     </>
