@@ -1,5 +1,5 @@
 import React from "react";
-import ShoppingBags from "../../Assets/BasicDetails/ShoppingBags.png";
+import ShoppingBags from "../../Assets/AccommodationRegistration/ShoppingBags.png";
 import Footer from "../../Component/Footer/Footer";
 import RegPageNavbar from "../../Component/RegistrationPageNavbar/RegPageNavbar";
 import DescriptionCompo from "../../Component/VenderRegister/DescriptionCompo/DescriptionCompo";

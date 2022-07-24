@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
 import React from "react";
-import Upload from "../../../../Assets/BasicDetails/Upload.png";
+import Upload from "../../../../Assets/AccommodationRegistration/Upload.png";
 import "./FormCompo.css";
 
 function FormCompo() {

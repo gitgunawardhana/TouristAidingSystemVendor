@@ -1,5 +1,5 @@
 import React from "react";
-import Map from "../../Assets/BasicDetails/Map.png";
+import Map from "../../Assets/AccommodationRegistration/Map.png";
 import Footer from "../../Component/Footer/Footer";
 import RegPageNavbar from "../../Component/RegistrationPageNavbar/RegPageNavbar";
 import DescriptionCompo from "../../Component/VenderRegister/DescriptionCompo/DescriptionCompo";
