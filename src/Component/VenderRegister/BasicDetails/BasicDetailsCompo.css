@@ -137,7 +137,7 @@
 }
 
 .heading-basic {
-    font-size: 20px;
+    font-size: 26px;
     color: #737373;
     margin-top: 20px;
     margin-bottom: 0 !important;
@@ -154,4 +154,17 @@
 
     }
 
+}
+.label-color{
+    color: #000000 !important;
+}
+.next-btn{
+    float: right !important;
+}
+.next-pre-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #0a53be;
+    font-weight:bold;
 }
