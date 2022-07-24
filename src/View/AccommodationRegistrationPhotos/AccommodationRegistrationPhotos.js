@@ -3,7 +3,7 @@ import Map from "../../Assets/BasicDetails/Map.png";
 import Footer from "../../Component/Footer/Footer";
 import RegPageNavbar from "../../Component/RegistrationPageNavbar/RegPageNavbar";
 import DescriptionCompo from "../../Component/VenderRegister/DescriptionCompo/DescriptionCompo";
-import FormCompo from "../../Component/VenderRegister/Photos/FormCompo/FormCompo";
+import FormCompo from "../../Component/VenderRegister/StepPages/PhotosFormCompo/FormCompo";
 import StepsButton from "../../Component/VenderRegister/StepsButton/StepsButton";
 
 function AccommodationRegistrationPhotos() {

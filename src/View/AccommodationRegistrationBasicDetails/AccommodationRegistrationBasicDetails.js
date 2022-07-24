@@ -2,8 +2,8 @@ import React from "react";
 import ShoppingBags from "../../Assets/BasicDetails/ShoppingBags.png";
 import Footer from "../../Component/Footer/Footer";
 import RegPageNavbar from "../../Component/RegistrationPageNavbar/RegPageNavbar";
-import FormCompo from "../../Component/VenderRegister/BasicDetails/FormCompo/FormCompo";
 import DescriptionCompo from "../../Component/VenderRegister/DescriptionCompo/DescriptionCompo";
+import FormCompo from "../../Component/VenderRegister/StepPages/BasicDetailsFormCompo/FormCompo";
 import StepsButton from "../../Component/VenderRegister/StepsButton/StepsButton";
 
 function AccommodationRegistrationBasicDetails() {
