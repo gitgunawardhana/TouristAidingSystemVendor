@@ -25,7 +25,7 @@ function FormCompo() {
                       htmlFor="currentPassword"
                     >
                       The building's exterior, parking space(s), entrance, and
-                      any available facilities
+                      any available facilities.
                     </label>
                     <div className="content-file-upload text-center">
                       <img src={Upload} alt="Upload File" />

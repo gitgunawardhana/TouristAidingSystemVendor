@@ -5,6 +5,7 @@ import "./App.css";
 import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
 import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
+import AccommodationRegistrationFacilities from "./View/AccommodationRegistrationFacilities/AccommodationRegistrationFacilities";
 import AccommodationRegistrationPhotos from "./View/AccommodationRegistrationPhotos/AccommodationRegistrationPhotos";
 import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
@@ -26,6 +27,10 @@ function App() {
             element={<AccommodationRegistrationBasicDetails />}
           />
           <Route path="/photos" element={<AccommodationRegistrationPhotos />} />
+          <Route
+            path="/facilities"
+            element={<AccommodationRegistrationFacilities />}
+          />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
         </Routes>
       </Router>
