@@ -40,18 +40,18 @@ const FormCompo = () => {
                             <div class="col-md-6 mb-3">
                                 <h6>Check-In-Between</h6>
                                 {/* <label for="firstName">First name</label> */}
-                                <input type="time" class="form-control" id="firstName" placeholder="" value="" required="" />
+                                <input type="time" class="form-control" id="firstName" placeholder="Between" />
                             </div>
                             <div class="col-md-6 mb-3">
-                                <h6>Check-In-Between</h6>
-                                <input type="time" class="form-control" id="firstName" placeholder="" value="" required="" />
+
+                                <input type="time" class="form-control" id="firstName" placeholder="And" style={{ marginTop: "27px" }} />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <h6>What time will guests have to checkout by?</h6>
                                 {/* <label for="firstName">First name</label> */}
-                                <input type="time" class="form-control" id="firstName" placeholder="" value="" required="" />
+                                <input type="time" class="form-control" id="firstName" placeholder="check-out" />
                             </div>
                         </div>
                         {/* <form>
