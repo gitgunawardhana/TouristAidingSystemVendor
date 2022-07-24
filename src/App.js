@@ -7,6 +7,8 @@ import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
 import VenderType from "./View/VenderType/VenderType";
+import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
+import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vender-type" element={<VenderType />} />
-        </Routes>
+          <Route path="/basicDetails" element={<AccommodationRegistrationBasicDetails/>}/>
+          <Route path="/regPageNavbar" element={<RegPageNavbar/>}/>
+          </Routes>
       </Router>
     </>
   );
