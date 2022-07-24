@@ -2,6 +2,7 @@ import FormGroup from "@mui/material/FormGroup";
 import React from "react";
 import CheckboxSection from "./CheckboxSection/CheckboxSection";
 import "./FormCompo.css";
+import {Link} from "react-router-dom";
 
 const access = [
   "Check-in/out [private]",
@@ -276,13 +277,16 @@ function FormCompo() {
                 </form>
               </div>
             </div>
-
+            <Link to="/homeRules">
             <button type="button" className=" next-pre-btn pre-btn  ">
               PREVIOUS
             </button>
+            </Link>
+            <Link to="/photos">
             <button type="button" className=" next-pre-btn next-btn">
               NEXT
             </button>
+            </Link>
           </div>
         </div>
       </div>
