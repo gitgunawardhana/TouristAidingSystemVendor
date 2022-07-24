@@ -1,0 +1,37 @@
+.content-file-upload {
+  margin: auto;
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 /15%) !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.sub-label span {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.fw-light div {
+  margin-left: 5px;
+}
+.sub-label {
+  margin-bottom: 0px;
+}
+
+.content-check-div {
+  margin: 4px !important;
+  padding-top: 10px !important;
+  padding-bottom: 30px !important;
+}
+
+.sub-heading-section {
+  margin-top: 20px;
+}
+
+.checkbox-section-acc-reg {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-flow: wrap;
+}
