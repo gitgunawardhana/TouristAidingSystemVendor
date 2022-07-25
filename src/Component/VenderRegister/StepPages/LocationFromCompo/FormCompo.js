@@ -17,7 +17,7 @@ function FormCompo() {
                                             className=" mb-7 fw-normal fs-5 label-color"
                                             htmlFor="currentPassword"
                                         >
-                                            Location{" "}
+                                            Location{""}
                                         </label>
                                         <br/>
                                         <label

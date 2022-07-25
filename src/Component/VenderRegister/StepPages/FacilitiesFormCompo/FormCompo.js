@@ -277,7 +277,7 @@ function FormCompo() {
                 </form>
               </div>
             </div>
-            <Link to="/homeRules">
+            <Link to="/houseRules">
             <button type="button" className=" next-pre-btn pre-btn  ">
               PREVIOUS
             </button>
