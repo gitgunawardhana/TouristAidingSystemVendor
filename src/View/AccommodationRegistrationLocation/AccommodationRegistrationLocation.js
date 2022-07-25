@@ -2,7 +2,7 @@ import React from "react";
 import RegPageNavbar from "../../Component/RegistrationPageNavbar/RegPageNavbar";
 import StepsButton from "../../Component/VenderRegister/StepsButton/StepsButton";
 import DescriptionCompo from "../../Component/VenderRegister/DescriptionCompo/DescriptionCompo";
-import ShoppingBags from "../../Assets/AccommodationRegistration/Map.png";
+import ShoppingBags from "../../Assets/AccommodationRegistration/googl.png";
 import FormCompo from "../../Component/VenderRegister/StepPages/LocationFromCompo/FormCompo";
 import Footer from "../../Component/Footer/Footer";
 
