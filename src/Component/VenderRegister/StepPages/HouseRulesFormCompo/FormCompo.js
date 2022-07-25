@@ -1,5 +1,8 @@
 import React from "react";
 import "../HouseRulesFormCompo/FormCompo.css";
+import {Link} from "react-router-dom";
+import Footer from "../../../Footer/Footer";
+
 
 const FormCompo = () => {
     return <div><div className="container-xl px-4 mt-4 ">
