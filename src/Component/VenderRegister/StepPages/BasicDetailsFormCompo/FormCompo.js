@@ -28,7 +28,7 @@ function FormCompo() {
                     <input
                       className="form-control"
                       id="currentPassword"
-                      type="password"
+                      type="text"
                       placeholder="Property name"
                     />
                   </div>
