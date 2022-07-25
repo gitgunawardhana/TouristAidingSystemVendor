@@ -35,7 +35,7 @@ function StepsButton() {
             <Link onClick={e => e.preventDefault()}
               to="/houserules"
               className={
-                currentPath.includes("houserules")
+                currentPath.includes("houseRules")
                   ? "nav-link  ms-0 nav-bar-link active"
                   : "nav-link  ms-0 nav-bar-link"
               }
