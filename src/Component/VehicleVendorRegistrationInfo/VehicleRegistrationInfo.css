@@ -1,0 +1,23 @@
+.vehicleRegDisclaimer {
+  display: flex;
+  justify-content: center;
+}
+
+.info-wrapper-vehicle {
+  box-sizing: unset;
+  -webkit-backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+#conditionsvehicle {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.vehicle-info-button {
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 20px;
+}

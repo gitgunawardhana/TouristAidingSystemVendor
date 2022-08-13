@@ -12,7 +12,11 @@ import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
 import VenderType from "./View/VenderType/VenderType";
-
+import VehicleRegInfo from '../src/View/VehicleRegistrationInfo/VehicleRegistrationInfo.js'
+import VehicleRegVehicle from '../src/View/VehicleRegistrationVehicleDetails/VehicleDetails.js'
+import VehicleRegPhotos from '../src/View/VehicleRegistrationPhoto/VehicleRegistrationPhoto.js'
+import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
+import VehicleRegDriverInfo from '../src/View/VehicleRegDriverDetails/VehicleRegDriverDetails.js'
 function App() {
   return (
     <>
@@ -23,6 +27,11 @@ function App() {
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vender-type" element={<VenderType />} />
+          <Route path="/vender-vehicle-reg-info" element={<VehicleRegInfo />} />
+          <Route path="/vender-vehicle-reg-vehicle" element={< VehicleRegVehicle />} />
+          <Route path="/vender-vehicle-reg-photo" element={< VehicleRegPhotos />} />
+          <Route path="/vender-vehicle-owner-info" element={< VehicleRegOwnerInfo />} />
+          <Route path="/vender-vehicle-driver-info" element={< VehicleRegDriverInfo />} />
           <Route
             path="/basicDetails"
             element={<AccommodationRegistrationBasicDetails />}
