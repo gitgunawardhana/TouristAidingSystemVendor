@@ -15,12 +15,14 @@ import SignIn from "./View/SignIn/SignIn";
 import VendorType from "./View/VenderType/VenderType";
 import AccommodationRegistrationLocation
   from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
+import ScrollToTop from "./Component/ScrollToTop";
 
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/createAccount" element={<CreateAccount />} />
