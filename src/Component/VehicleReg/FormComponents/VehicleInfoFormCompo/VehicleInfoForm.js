@@ -1,10 +1,16 @@
 import React from "react";
 import './VehicleInfoForm.css'
-import * as mdb from 'mdb-ui-kit'; // lib
-import { Input } from 'mdb-ui-kit'; // module
+import { useNavigate } from "react-router";
 
 
 const VehicleInfoForm = () => {
+    const navigate = useNavigate();
+    const navigateToVehiclePhoto = () => {
+        navigate('/vender-vehicle-reg-photo');
+    };
+    const navigateToVehicleInfo = () => {
+        navigate('/vender-vehicle-reg-info');
+    };
     return <div><div className="container-xl px-4 mt-4 ">
         <div className="row row-margin d-flex justify-content-center">
             <div className="col-lg-8">
@@ -71,10 +77,10 @@ const VehicleInfoForm = () => {
                     </div>
                 </div>
 
-                <button type="button" className=" next-pre-btn pre-btn  ">
+                <button type="button" className=" next-pre-btn pre-btn  " onClick={navigateToVehicleInfo}>
                     PREVIOUS
                 </button>
-                <button type="button" className=" next-pre-btn next-btn">
+                <button type="button" className=" next-pre-btn next-btn" onClick={navigateToVehiclePhoto}>
                     NEXT
                 </button>
             </div>

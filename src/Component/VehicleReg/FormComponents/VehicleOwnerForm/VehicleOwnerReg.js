@@ -1,7 +1,15 @@
 import React from "react";
 import '../VehicleInfoFormCompo/VehicleInfoForm.css'
+import { useNavigate } from "react-router";
 
 const VehicleOwnerReg = () => {
+    const navigate = useNavigate();
+    const navigateToVehiclePhoto = () => {
+        navigate('/vender-vehicle-reg-photo');
+    };
+    const navigateToVehicleDriver = () => {
+        navigate('/vender-vehicle-driver-info');
+    };
     return <div><div className="container-xl px-4 mt-4 ">
         <div className="row row-margin d-flex justify-content-center">
             <div className="col-lg-8">
@@ -76,10 +84,10 @@ const VehicleOwnerReg = () => {
                     </div>
                 </div>
 
-                <button type="button" className=" next-pre-btn pre-btn  ">
+                <button type="button" className=" next-pre-btn pre-btn  " onClick={navigateToVehiclePhoto}>
                     PREVIOUS
                 </button>
-                <button type="button" className=" next-pre-btn next-btn">
+                <button type="button" className=" next-pre-btn next-btn" onClick={navigateToVehicleDriver}>
                     NEXT
                 </button>
             </div>

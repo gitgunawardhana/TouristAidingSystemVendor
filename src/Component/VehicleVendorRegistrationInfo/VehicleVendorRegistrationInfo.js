@@ -1,6 +1,7 @@
 import React from "react";
 import './VehicleRegistrationInfo.css';
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 
 const VehicleVendorRegistrationInfo = () => {
@@ -32,17 +33,12 @@ const VehicleVendorRegistrationInfo = () => {
                     <button onClick={navigateToVehicleRegistration} type="button" className="btn  btn-lg ">I Understand and I Wish to Continue
                     </button>
                 </div>
-                {/* <div className="vender-page-btns">
-                    <div className="vender-btn vender-btn-hotel">
-                        <img src={Hotel} alt="Hotel" />
-                    </div>
-                    <div className="vender-btn vender-btn-vehicle">
-                        <img src={Vehicle} alt="Vehicle" />
-                    </div>
-                </div> */}
+
+
             </div>
         </div>
-    </div></>
+    </div>
+    </>
 };
 
 export default VehicleVendorRegistrationInfo;

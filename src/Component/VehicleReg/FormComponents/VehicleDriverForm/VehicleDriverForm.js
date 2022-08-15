@@ -1,7 +1,12 @@
 import React from "react";
 import '../VehicleInfoFormCompo/VehicleInfoForm.css'
+import { useNavigate } from "react-router";
 
 const VehicleDriverForm = () => {
+    const navigate = useNavigate();
+    const navigateToVehicleOwner = () => {
+        navigate('/vender-vehicle-owner-info');
+    };
     return <div><div className="container-xl px-4 mt-4 ">
         <div className="row row-margin d-flex justify-content-center">
             <div className="col-lg-8">
@@ -76,7 +81,7 @@ const VehicleDriverForm = () => {
                     </div>
                 </div>
 
-                <button type="button" className=" next-pre-btn pre-btn  ">
+                <button type="button" className=" next-pre-btn pre-btn  " onClick={navigateToVehicleOwner}>
                     PREVIOUS
                 </button>
                 <button type="button" className=" next-pre-btn next-btn">
