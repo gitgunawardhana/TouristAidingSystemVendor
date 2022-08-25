@@ -9,8 +9,8 @@ const VehiclePhotoForm = () => {
     const navigateToVehicleRegistration = () => {
         navigate('/vender-vehicle-reg-vehicle');
     };
-    const navigateToOwnerInfo = () => {
-        navigate('/vender-vehicle-owner-info');
+    const navigateToVehicleDriver = () => {
+        navigate('/vender-vehicle-driver-info');
     };
     return <div>
         <div className="container-xl px-4 mt-4 ">
@@ -61,7 +61,7 @@ const VehiclePhotoForm = () => {
                     <button type="button" className=" next-pre-btn pre-btn  " onClick={navigateToVehicleRegistration}>
                         PREVIOUS
                     </button>
-                    <button type="button" className=" next-pre-btn next-btn" onClick={navigateToOwnerInfo}>
+                    <button type="button" className=" next-pre-btn next-btn" onClick={navigateToVehicleDriver}>
                         NEXT
                     </button>
                 </div>

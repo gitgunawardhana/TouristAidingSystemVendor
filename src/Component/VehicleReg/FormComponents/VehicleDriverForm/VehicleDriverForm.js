@@ -4,8 +4,8 @@ import { useNavigate } from "react-router";
 
 const VehicleDriverForm = () => {
     const navigate = useNavigate();
-    const navigateToVehicleOwner = () => {
-        navigate('/vender-vehicle-owner-info');
+    const navigateToVehiclePhoto = () => {
+        navigate('/vender-vehicle-reg-photo');
     };
     return <div><div className="container-xl px-4 mt-4 ">
         <div className="row row-margin d-flex justify-content-center">
@@ -13,9 +13,13 @@ const VehicleDriverForm = () => {
                 <div className="card mb-4 body-radius">
                     <div className="card-body">
                         <div class="row">
-                            <div class="col-md-12 mb-3">
-                                <h6>Full Name</h6>
-                                <input type="text" class="form-control" id="firstName" placeholder="" />
+                            <div class="col-md-6 mb-3">
+                                <h6>First Name</h6>
+                                <input type="text" class="form-control" id="firstName" placeholder="Ex:Toyota Corolla" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h6>Last Name</h6>
+                                <input type="text" class="form-control" id="firstName" placeholder="Number of Sheets" />
                             </div>
                         </div>
                         <div class="row">
@@ -67,6 +71,10 @@ const VehicleDriverForm = () => {
                                 <h6>Postal Code</h6>
                                 <input type="text" class="form-control" id="firstName" placeholder="" />
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <h6>Tourism Registration Number</h6>
+                                <input type="text" class="form-control" id="firstName" placeholder="Ex:Toyota Corolla" />
+                            </div>
 
 
                         </div>
@@ -81,7 +89,7 @@ const VehicleDriverForm = () => {
                     </div>
                 </div>
 
-                <button type="button" className=" next-pre-btn pre-btn  " onClick={navigateToVehicleOwner}>
+                <button type="button" className=" next-pre-btn pre-btn  " onClick={navigateToVehiclePhoto}>
                     PREVIOUS
                 </button>
                 <button type="button" className=" next-pre-btn next-btn">

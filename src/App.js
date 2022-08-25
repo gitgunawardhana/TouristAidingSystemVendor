@@ -15,7 +15,7 @@ import VenderType from "./View/VenderType/VenderType";
 import VehicleRegInfo from '../src/View/VehicleRegistrationInfo/VehicleRegistrationInfo.js'
 import VehicleRegVehicle from '../src/View/VehicleRegistrationVehicleDetails/VehicleDetails.js'
 import VehicleRegPhotos from '../src/View/VehicleRegistrationPhoto/VehicleRegistrationPhoto.js'
-import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
+// import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
 import VehicleRegDriverInfo from '../src/View/VehicleRegDriverDetails/VehicleRegDriverDetails.js'
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route path="/vender-vehicle-reg-info" element={<VehicleRegInfo />} />
           <Route path="/vender-vehicle-reg-vehicle" element={< VehicleRegVehicle />} />
           <Route path="/vender-vehicle-reg-photo" element={< VehicleRegPhotos />} />
-          <Route path="/vender-vehicle-owner-info" element={< VehicleRegOwnerInfo />} />
+          {/* <Route path="/vender-vehicle-owner-info" element={< VehicleRegOwnerInfo />} /> */}
           <Route path="/vender-vehicle-driver-info" element={< VehicleRegDriverInfo />} />
           <Route
             path="/basicDetails"

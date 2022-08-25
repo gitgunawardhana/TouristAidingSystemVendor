@@ -29,7 +29,7 @@ const StepButtonVehicle = () => {
                     >
                         Photos
                     </Link>
-                    <Link
+                    {/* <Link
                         to="/vender-vehicle-owner-info"
                         className={
                             currentPath.includes("vender-vehicle-owner-info")
@@ -38,7 +38,7 @@ const StepButtonVehicle = () => {
                         }
                     >
                         Owner Details
-                    </Link>
+                    </Link> */}
                     <Link
                         to="/vender-vehicle-driver-info"
                         className={
