@@ -34,6 +34,7 @@ function App() {
           <Route path="/facilities" element={<AccommodationRegistrationFacilities />}/>
           <Route path="/houseRules" element={<AccommodationRegistrationHouseRules />}/>
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
+
         </Routes>
       </Router>
     </>
