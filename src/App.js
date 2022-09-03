@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./App.css";
+import DashboardMain from "./View/VendorDashboard/Dashboard";
+import VendorDashboardAccomodationView from "./View/VendorDashboard/vendorDashboardAccomodationView";
 import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
 import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
@@ -23,6 +25,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/vendorDashBoardMain" element={<DashboardMain />} />
+          <Route path="/vendorDashboardAccomodationView" element={<VendorDashboardAccomodationView />} />
           <Route path="/createAccount" element={<CreateAccount />} />
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
