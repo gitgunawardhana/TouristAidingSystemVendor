@@ -47,6 +47,7 @@ function App() {
           />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
         </Routes>
+
       </Router>
     </>
   );
