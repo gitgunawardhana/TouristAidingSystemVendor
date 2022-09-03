@@ -8,14 +8,11 @@ import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
 import AccommodationRegistrationFacilities from "./View/AccommodationRegistrationFacilities/AccommodationRegistrationFacilities";
 import AccommodationRegistrationPhotos from "./View/AccommodationRegistrationPhotos/AccommodationRegistrationPhotos";
-import AccommodationRegistrationHouseRules from "./View/AccommodationRegistrationHouseRules/AccomodationRegistrationHouseRules";
+import AccomodationRegistrationHouseRules from "./View/AccomodationRegistrationHouseRules/AccomodationRegistrationHouseRules";
 import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
-import VendorType from "./View/VenderType/VenderType";
-import AccommodationRegistrationLocation
-  from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
-
+import VenderType from "./View/VenderType/VenderType";
 
 function App() {
   return (
@@ -26,15 +23,21 @@ function App() {
           <Route path="/createAccount" element={<CreateAccount />} />
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />
-          <Route path="/vendor-type" element={<VendorType />} />
-          <Route path="/basicDetails" element={<AccommodationRegistrationBasicDetails />}/>
+          <Route path="/vender-type" element={<VenderType />} />
+          <Route
+            path="/basicDetails"
+            element={<AccommodationRegistrationBasicDetails />}
+          />
           <Route path="/photos" element={<AccommodationRegistrationPhotos />} />
-          <Route path="/facilities" element={<AccommodationRegistrationFacilities />}/>
-          <Route path="/location" element={<AccommodationRegistrationLocation />} />
-          <Route path="/facilities" element={<AccommodationRegistrationFacilities />}/>
-          <Route path="/houseRules" element={<AccommodationRegistrationHouseRules />}/>
+          <Route
+            path="/facilities"
+            element={<AccommodationRegistrationFacilities />}
+          />
+          <Route
+            path="/houserules"
+            element={<AccomodationRegistrationHouseRules />}
+          />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
-
         </Routes>
       </Router>
     </>
