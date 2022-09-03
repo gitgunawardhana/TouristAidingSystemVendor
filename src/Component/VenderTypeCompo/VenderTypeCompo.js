@@ -2,6 +2,7 @@ import React from "react";
 import Hotel from "../../Assets/VenderTypeAssets/Hotel.png";
 import Vehicle from "../../Assets/VenderTypeAssets/Vehicle.png";
 import "./VenderTypeCompo.css";
+import {Link} from "react-router-dom";
 
 function VenderType() {
   return (
@@ -18,10 +19,13 @@ function VenderType() {
                 onboarding.
               </p>
             </div>
+
             <div className="vender-page-btns">
+              <Link to="/basicDetails">
               <div className="vender-btn vender-btn-hotel">
                 <img src={Hotel} alt="Hotel" />
               </div>
+            </Link>
               <div className="vender-btn vender-btn-vehicle">
                 <img src={Vehicle} alt="Vehicle" />
               </div>
