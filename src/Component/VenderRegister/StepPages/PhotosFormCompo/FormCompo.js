@@ -1,5 +1,6 @@
 import Button from "@mui/material/Button";
 import React from "react";
+import { Link } from "react-router-dom";
 import Upload from "../../../../Assets/AccommodationRegistration/Upload.png";
 import "./FormCompo.css";
 
@@ -51,13 +52,16 @@ function FormCompo() {
                 </form>
               </div>
             </div>
-
-            <button type="button" className=" next-pre-btn pre-btn  ">
-              PREVIOUS
-            </button>
-            <button type="button" className=" next-pre-btn next-btn">
-              NEXT
-            </button>
+            <Link to="/facilities">
+              <button type="button" className=" next-pre-btn pre-btn  ">
+                PREVIOUS
+              </button>
+            </Link>
+            <Link to="#">
+              <button type="button" className=" next-pre-btn next-btn">
+                FINISH
+              </button>
+            </Link>
           </div>
         </div>
       </div>

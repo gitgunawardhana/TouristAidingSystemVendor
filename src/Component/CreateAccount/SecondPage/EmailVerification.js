@@ -3,6 +3,8 @@ import "./EmailVerification.css"
 import colombo from "../../../Assets/CreateAccount/colombo.png";
 import 'react-phone-number-input/style.css'
 import Form from 'react-bootstrap/Form';
+import {Link} from "react-router-dom";
+
 
 function EmailVerification() {
     const [value, setValue] = useState()
@@ -46,8 +48,13 @@ function EmailVerification() {
 
 
                                             <div className="d-flex justify-content-end pt-3">
-                                                <button type="button" className="btn  btn-lg ms-2">VERIFY
+
+                                                <button type="button" className="btn  btn-lg ms-2 verify-btn">
+                                                    <Link to="/signIn" className="sign-in-btn">
+                                                    VERIFY
+                                                    </Link>
                                                 </button>
+
                                             </div>
 
                                             <p className="text-center text-muted mt-5 mb-0">Didn’t receive the code? <a

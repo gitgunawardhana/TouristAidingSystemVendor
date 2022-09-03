@@ -75,4 +75,13 @@
     font-family: 'Roboto', sans-serif;
 
 }
-
+.verify-btn{
+    width: 100% !important;
+}
+.sign-in-btn{
+    color: white;
+    text-decoration: none;
+}
+.sign-in-btn:hover{
+    color: white;
+}

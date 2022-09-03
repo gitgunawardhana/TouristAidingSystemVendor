@@ -30,12 +30,15 @@ function SlideShow() {
 
                     </div>
                 </div>
-                <div className="carousel-item">
-                    <div className="first-slide shadow p-3 mb-5 bg-white rounded"></div>
-                </div>
-                <div className="carousel-item">
-                    <div className="first-slide shadow p-3 mb-5 bg-white rounded"></div>
-                </div>
+                {/*<div className="carousel-item">*/}
+                {/*    <div className="second-slide shadow p-3 mb-5 bg-white rounded"></div>*/}
+
+
+                {/*</div>*/}
+                {/*<div className="carousel-item">*/}
+                {/*    <div className="third-slide shadow p-3 mb-5 bg-white rounded"></div>*/}
+
+                {/*</div>*/}
             </div>
             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
