@@ -6,21 +6,15 @@ import {Link} from "react-router-dom";
 
 const access = [
   "Check-in/out [private]",
-  "Check-in/out [private]",
   "Front desk [24-hour]",
   "Check-in [24-hour]",
   "Car park",
 ];
 
 const importantInfo = [
-  "A/C",
   "Pets allowed",
   "Transport to airport",
-  "Dishwasher",
-  "Breakfast [free]",
-  "Shared kitchen",
   "Laundry service",
-  "Kitchen basics (cookware, oils, condiments)",
 ];
 
 const kitchen = [
@@ -103,17 +97,22 @@ function FormCompo() {
                               <CheckboxSection
                                 dataList={access}
                                 startP={0}
+                                endP={1}
+                              ></CheckboxSection>
+                              <CheckboxSection
+                                dataList={access}
+                                startP={1}
                                 endP={2}
                               ></CheckboxSection>
                               <CheckboxSection
                                 dataList={access}
                                 startP={2}
-                                endP={4}
+                                endP={3}
                               ></CheckboxSection>
                               <CheckboxSection
                                 dataList={access}
-                                startP={4}
-                                endP={5}
+                                startP={3}
+                                endP={4}
                               ></CheckboxSection>
                             </div>
                           </div>
@@ -142,60 +141,60 @@ function FormCompo() {
                               <CheckboxSection
                                 dataList={importantInfo}
                                 startP={0}
+                                endP={1}
+                              ></CheckboxSection>
+                              <CheckboxSection
+                                dataList={importantInfo}
+                                startP={1}
+                                endP={2}
+                              ></CheckboxSection>
+                              <CheckboxSection
+                                dataList={importantInfo}
+                                startP={2}
                                 endP={3}
-                              ></CheckboxSection>
-                              <CheckboxSection
-                                dataList={importantInfo}
-                                startP={3}
-                                endP={6}
-                              ></CheckboxSection>
-                              <CheckboxSection
-                                dataList={importantInfo}
-                                startP={6}
-                                endP={8}
                               ></CheckboxSection>
                             </div>
                           </div>
                         </div>
-                        <div>
-                          <div className="sub-heading-section">
-                            <label className=" mb-7 fw-normal fs-9 label-color sub-label">
-                              <span>Kitchen</span>
-                            </label>
-                            <br />
-                            <label className="small mb-2 fw-light">
-                              <div>
-                                Facilities and amenities that allow travelers to
-                                eat and drink comfortably.
-                              </div>
-                            </label>
-                          </div>
-                          <div className="content-file-upload content-check-div text-center">
-                            <div
-                              className="checkbox-section checkbox-section-acc-reg"
-                              style={{
-                                display: "flex",
-                                marginTop: "20px",
-                              }}
-                            >
-                              <CheckboxSection
-                                dataList={kitchen}
-                                startP={0}
-                                endP={3}
-                              ></CheckboxSection>
-                              <CheckboxSection
-                                dataList={kitchen}
-                                startP={3}
-                                endP={6}
-                              ></CheckboxSection>
-                              <CheckboxSection
-                                dataList={kitchen}
-                                startP={6}
-                                endP={8}
-                              ></CheckboxSection>
-                            </div>
-                          </div>
-                        </div>
+                        {/*<div>*/}
+                        {/*  <div className="sub-heading-section">*/}
+                        {/*    <label className=" mb-7 fw-normal fs-9 label-color sub-label">*/}
+                        {/*      <span>Kitchen</span>*/}
+                        {/*    </label>*/}
+                        {/*    <br />*/}
+                        {/*    <label className="small mb-2 fw-light">*/}
+                        {/*      <div>*/}
+                        {/*        Facilities and amenities that allow travelers to*/}
+                        {/*        eat and drink comfortably.*/}
+                        {/*      </div>*/}
+                        {/*    </label>*/}
+                        {/*  </div>*/}
+                        {/*  <div className="content-file-upload content-check-div text-center">*/}
+                        {/*    <div*/}
+                        {/*      className="checkbox-section checkbox-section-acc-reg"*/}
+                        {/*      style={{*/}
+                        {/*        display: "flex",*/}
+                        {/*        marginTop: "20px",*/}
+                        {/*      }}*/}
+                        {/*    >*/}
+                        {/*      <CheckboxSection*/}
+                        {/*        dataList={kitchen}*/}
+                        {/*        startP={0}*/}
+                        {/*        endP={3}*/}
+                        {/*      ></CheckboxSection>*/}
+                        {/*      <CheckboxSection*/}
+                        {/*        dataList={kitchen}*/}
+                        {/*        startP={3}*/}
+                        {/*        endP={6}*/}
+                        {/*      ></CheckboxSection>*/}
+                        {/*      <CheckboxSection*/}
+                        {/*        dataList={kitchen}*/}
+                        {/*        startP={6}*/}
+                        {/*        endP={8}*/}
+                        {/*      ></CheckboxSection>*/}
+                        {/*    </div>*/}
+                        {/*  </div>*/}
+                        {/*</div>*/}
                         <div>
                           <div className="sub-heading-section">
                             <label className=" mb-7 fw-normal fs-9 label-color sub-label">

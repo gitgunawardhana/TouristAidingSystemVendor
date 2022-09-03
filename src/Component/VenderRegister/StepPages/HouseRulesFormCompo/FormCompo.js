@@ -34,21 +34,21 @@ const FormCompo = () => {
                                     <input type="time" class="form-control" id="firstName" placeholder="" value=""
                                            required=""/>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <h6></h6>
-                                    <input type="time" class="form-control margin-form" id="firstName" placeholder="" value=""
-                                           required=""/>
-                                </div>
-                            </div>
-                            <div class="row">
+                                {/*<div class="col-md-6 mb-3">*/}
+                                {/*    <h6></h6>*/}
+                                {/*    <input type="time" class="form-control margin-form" id="firstName" placeholder="" value=""*/}
+                                {/*           required=""/>*/}
+                                {/*</div>*/}
+
+                                {/*<div class="row">*/}
                                 <div class="col-md-6 mb-3">
                                     <h6>What time will guests have to checkout by?</h6>
                                     {/* <label for="firstName">First name</label> */}
                                     <input type="time" class="form-control" id="firstName" placeholder="" value=""
                                            required=""/>
                                 </div>
+                                {/*</div>*/}
                             </div>
-
                         </div>
                     </div>
                     <Link to="/location">
@@ -66,7 +66,7 @@ const FormCompo = () => {
             </div>
         </div>
         <Footer/>
-    </div>;
+    </div>
 };
 
 export default FormCompo;
