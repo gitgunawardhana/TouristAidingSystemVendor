@@ -11,7 +11,7 @@ export const NavigationPanelVendorData = [
         path: '/vendorDashBoardMain',
         icon: <img src={Dashboard} alt="Dashboard Icon" className="nav-bar-icon" />,
         subItems: [{ title: 'Accomodation', path: '/vendorDashboardAccomodationView' },
-        { title: 'Vehicle', path: '/configurations/vehicle-types' },]
+        { title: 'Vehicle', path: '/VendorDashboardVehicleBookingsView' },]
     },
     {
         title: 'Add New',

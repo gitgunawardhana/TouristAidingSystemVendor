@@ -3,7 +3,12 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./App.css";
 import DashboardMain from "./View/VendorDashboard/Dashboard";
-import VendorDashboardAccomodationView from "./View/VendorDashboard/vendorDashboardAccomodationView";
+import Profile from "./View/profile/profile";
+import PaymentDetails from "./View/profile/paymentDetails";
+import Security from "./View/profile/security";
+import Notificationes from "./View/profile/notificationes";
+import VendorDashboardAccomodationView from "../src/View/VendorDashboard/vendorDashboardAccomodationView/vendorDashboardAccomodationView";
+import VendorDashboardVehicleBookingsView from "../src/View/VendorDashboard/vendorDashboardVehicleBookingsView"
 import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
 import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
@@ -26,7 +31,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/vendorDashBoardMain" element={<DashboardMain />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/paymentDetails" element={<PaymentDetails />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/notificationSettings" element={<Notificationes />} />
           <Route path="/vendorDashboardAccomodationView" element={<VendorDashboardAccomodationView />} />
+          <Route path="/VendorDashboardVehicleBookingsView" element={<VendorDashboardVehicleBookingsView />} />
           <Route path="/createAccount" element={<CreateAccount />} />
           <Route path="/emailVerification" element={<EmailVerification />} />
           <Route path="/signIn" element={<SignIn />} />

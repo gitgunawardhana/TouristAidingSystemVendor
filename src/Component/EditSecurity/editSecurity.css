@@ -1,0 +1,13 @@
+.row-margin {
+  margin-bottom: 212px !important;
+}
+@media screen and (max-width: 992px) {
+  .row-margin {
+    margin-bottom: auto !important;
+  }
+}
+.unsub-btn {
+  margin-top: 15px;
+  background-color: transparent;
+  border: none;
+}

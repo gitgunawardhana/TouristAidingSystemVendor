@@ -9,6 +9,10 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useLocation } from "react-router";
+import PowerOffIcon from "../../Assets/NavigationPanel/power-off.png";
+import profile from "../../Assets/Profile/Squa1.png";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import ProfileComponent from "../profileComponent/profileComponent.js";
 
 function NavigationPanel() {
 
@@ -51,7 +55,7 @@ function NavigationPanel() {
     return (
         <>
             <div className="upper-nav-bar">
-                <h1>ROADSIGN ADMIN PANEL</h1>
+                <ProfileComponent />
             </div>
             <div className="side-bar">
                 <div className="logo-name-dashboard">ROADSIGN</div>
@@ -97,6 +101,27 @@ function NavigationPanel() {
                             </AccordionDetails>
                         </Accordion>
                     ))}
+                    {/* <div className="logout-dashboard">
+                        <img src={PowerOffIcon} alt="" />
+                        <h5>Sign out</h5>
+                    </div> */}
+                    <div className="sign-out-dashboard">
+                        <Grid container spacing={0} className="navigation-item">
+                            <Grid item xs={2}>
+                                <img src={PowerOffIcon} alt="" className="power-img" />
+                            </Grid>
+
+
+                            <Grid item xs={9}>
+                                <Link to={"./Dashboard"} className="navigation-item-link">
+                                    <h5>Sign Out</h5>
+                                </Link>
+                            </Grid>
+
+                        </Grid>
+
+                    </div>
+
 
                 </div>
             </div>
