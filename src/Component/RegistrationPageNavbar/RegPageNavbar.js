@@ -14,12 +14,9 @@ function RegPageNavbar() {
                 <div className="nav-logo">
                     <div className="logo">
                         <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-                            <img src={ROADSIGN} height="15" alt="RoadSign Logo" loading="lazy" />
+                            <img src={ROADSIGN} height="15" alt="RoadSign Logo" loading="lazy" className="rodesign-img-navi" />
                         </Link>
                     </div>
-
-
-
                 </div>
             </div>
         </div>

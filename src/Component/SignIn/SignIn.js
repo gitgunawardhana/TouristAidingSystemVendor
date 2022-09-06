@@ -48,7 +48,10 @@ function SignInCom() {
 
 
                                                 <div className="d-flex justify-content-end pt-3">
-                                                    <button type="button" className="btn  btn-lg ms-2">Login
+                                                    <button type="button" className="btn  btn-lg ms-2">
+                                                        <Link to="/vendor-type" className="sign-in-btn">
+                                                            Login
+                                                        </Link>
                                                     </button>
                                                 </div>
 

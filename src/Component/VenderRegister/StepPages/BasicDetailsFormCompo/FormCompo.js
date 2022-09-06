@@ -1,5 +1,6 @@
 import React from "react";
 import "./FormCompo";
+import {Link} from "react-router-dom";
 
 function FormCompo() {
   return (
@@ -27,7 +28,7 @@ function FormCompo() {
                     <input
                       className="form-control"
                       id="currentPassword"
-                      type="password"
+                      type="text"
                       placeholder="Property name"
                     />
                   </div>
@@ -64,13 +65,11 @@ function FormCompo() {
                 </form>
               </div>
             </div>
-
-            <button type="button" className=" next-pre-btn pre-btn  ">
-              PREVIOUS
-            </button>
+            <Link to="/location">
             <button type="button" className=" next-pre-btn next-btn">
               NEXT
             </button>
+            </Link>
           </div>
         </div>
       </div>

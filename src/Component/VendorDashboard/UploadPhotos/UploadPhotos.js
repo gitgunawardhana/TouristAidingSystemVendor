@@ -1,14 +1,12 @@
 import Button from "@mui/material/Button";
 import React from "react";
-import Upload from "../../../../Assets/AccommodationRegistration/Upload.png";
-import "./FormCompo.css";
-import {Link} from "react-router-dom";
+import Upload from "../../../Assets/AccommodationRegistration/Upload.png";
 
-function FormCompo() {
+function UploadPhotos() {
   return (
     <div>
       <div className="container-xl px-4 mt-4 ">
-        <div className="row row-margin d-flex justify-content-center">
+        <div className="row row-margin d-flex justify-content-center mrgin-btm">
           <div className="col-lg-8">
             <div className="card mb-4 body-radius">
               <div className="card-body">
@@ -18,7 +16,7 @@ function FormCompo() {
                       className=" mb-7 fw-normal fs-5 label-color"
                       htmlFor="currentPassword"
                     >
-                      Property Photos
+                      Room Photos
                     </label>
                     <br />
                     <label
@@ -52,13 +50,6 @@ function FormCompo() {
                 </form>
               </div>
             </div>
-          <Link to="/facilities">
-            <button type="button" className=" next-pre-btn pre-btn  ">
-              PREVIOUS
-            </button>
-          </Link>
-
-
           </div>
         </div>
       </div>
@@ -66,4 +57,4 @@ function FormCompo() {
   );
 }
 
-export default FormCompo;
+export default UploadPhotos;
