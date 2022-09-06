@@ -7,7 +7,6 @@ import VehicleRegPhotos from "../src/View/VehicleRegistrationPhoto/VehicleRegist
 import VehicleRegVehicle from "../src/View/VehicleRegistrationVehicleDetails/VehicleDetails.js";
 import "./App.css";
 import DashboardMain from "./View/VendorDashboard/Dashboard";
-import VendorDashboardAccomodationView from "./View/VendorDashboard/vendorDashboardAccomodationView";
 import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
 import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
@@ -17,13 +16,13 @@ import AccommodationRegistrationPhotos from "./View/AccommodationRegistrationPho
 import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
-import DashboardMain from "./View/VendorDashboard/Dashboard";
-import VendorDashboardAccomodationView from "./View/VendorDashboard/vendorDashboardAccomodationView";
+import VendorDashboardAccomodationView from "../src/View/VendorDashboard/vendorDashboardAccomodationView/vendorDashboardAccomodationView";
 // import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
 import VehicleRegDriverInfo from "../src/View/VehicleRegDriverDetails/VehicleRegDriverDetails.js";
-import AddRoom from "./Component/VendorDashboard/AddRoom/AddRoom";
+import AddRoom from "../src/Component/VendorDashboard/AddRoom/AddRoom";
 import AccommodationRegistrationLocation from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
 import VendorType from "./View/VenderType/VenderType";
+import VendorDashboardVehicleBookingsView from "./View/VendorDashboard/vendorDashboardVehicleBookingsView.js";
 
 function App() {
   return (
@@ -35,8 +34,13 @@ function App() {
           <Route path="/vendorDashboardAccomodationView" element={<VendorDashboardAccomodationView />} />
           <Route path="/createAccount" element={<CreateAccount />} />
           <Route path="/emailVerification" element={<EmailVerification />} />
+          <Route path="/VendorDashboardVehicleBookingsView" element={<VendorDashboardVehicleBookingsView />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vendor-type" element={<VendorType />} />
+          <Route
+            path="/configurations/add-accommodation"
+            element={<AddRoom />}
+          />
           <Route
             path="/basicDetails"
             element={<AccommodationRegistrationBasicDetails />}
