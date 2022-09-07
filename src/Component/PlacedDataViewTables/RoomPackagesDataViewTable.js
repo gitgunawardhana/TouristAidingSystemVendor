@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
-import "./accomodationPlacedDataViewTable.css";
+import "./RoomPlacedDataView.css";
 import TableContainer from "@mui/material/TableContainer";
 import Table from "@mui/material/Table";
 import TableHead from "@mui/material/TableHead";
@@ -15,8 +15,8 @@ import * as FaIcons from "react-icons/fa";
 import TablePagination from "@mui/material/TablePagination";
 import Paper from "@mui/material/Paper";
 import Switch from '@mui/material/Switch';
-import axios from "axios";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 const columns = [
     {
@@ -32,26 +32,20 @@ const columns = [
         align: 'center'
     },
     {
-        id: 'provinceName',
-        label: 'Province',
+        id: 'telephone',
+        label: 'Telephone',
         minWidth: 100,
         align: 'center'
     },
     {
-        id: 'minimumSpendingDays',
-        label: 'Minimum Days To Spend',
+        id: 'email',
+        label: 'Email',
         minWidth: 100,
         align: 'center'
     },
     {
-        id: 'numberOfAttractions',
-        label: 'Number Of Attractions',
-        minWidth: 100,
-        align: 'center'
-    },
-    {
-        id: 'numberOfActivities',
-        label: 'Number Of Activities',
+        id: 'website',
+        label: 'Website',
         minWidth: 100,
         align: 'center'
     },
@@ -76,7 +70,12 @@ const columns = [
 
 ];
 
-function AllAccomodationes() {
+const token = JSON.parse(sessionStorage.getItem('token'));
+const config = {
+    headers: { Authorization: `Bearer ` + token }
+};
+
+function RoomPackagesDataView(props) {
 
     const navigate = useNavigate();
 
@@ -86,11 +85,12 @@ function AllAccomodationes() {
     const [searchText, setSearchText] = useState("");
 
     useEffect(() => {
-        getLocations();
+        getLocationAttractions();
     }, []);
 
-    const navigateToNewLocation = () => {
-        navigate('/add-New-Accomodation');
+    const navigateToNewLocationAttraction = () => {
+        // navigate('/location/attraction/new/' + props.locationId);
+        navigate('/Accomodation/Room-Package-Add');
     };
 
     const handleChangePage = (event, newPage) => {
@@ -102,15 +102,17 @@ function AllAccomodationes() {
         setPage(0);
     };
 
-    const getLocations = () => {
-        axios.get("http://localhost:8080/admin/location", {
+    const getLocationAttractions = () => {
+        axios.get("http://localhost:8080/admin/location/attraction", {
+            headers: { Authorization: `Bearer ` + token },
             params: {
-                "text": searchText
+                "text": searchText,
+                "locationId": props.locationId
             }
         })
             .then(res => {
-                const locations = res.data.body;
-                setRows(locations);
+                const locationAttractions = res.data.body;
+                setRows(locationAttractions);
             })
     }
 
@@ -118,18 +120,18 @@ function AllAccomodationes() {
         setSearchText(event.target.value);
     }
 
-    const viewLocation = (id) => (action) => {
-        navigate("/location/view/" + id);
+    const viewLocationAttraction = (id) => (action) => {
+        navigate("/location/attraction/view/" + id);
     };
 
-    const editLocation = (id) => (action) => {
-        navigate("/location/edit/" + id);
+    const editLocationAttraction = (id) => (action) => {
+        navigate("/location/attraction/edit/" + id);
     };
 
     const handleVisibility = (id) => (event) => {
         Swal.fire({
             title: 'Are you sure?',
-            text: "Do you want to change the visibility of the location?",
+            text: "Do you want to change the visibility of the location attraction?",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
@@ -137,16 +139,15 @@ function AllAccomodationes() {
             confirmButtonText: 'Yes, change it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                const baseURL = "http://localhost:8080/admin/location/" + id;
-                axios
-                    .patch(baseURL)
+                const endpointURL = "http://localhost:8080/admin/location/attraction/" + id;
+                axios.patch(endpointURL, config)
                     .then((response) => {
                         if (response.data.success) {
                             Swal.fire(
                                 'Status Changed!',
                                 response.data.message,
                                 'success'
-                            ).then(r => getLocations())
+                            ).then(r => getLocationAttractions())
                         } else {
                             Swal.fire(
                                 'Failed',
@@ -172,26 +173,28 @@ function AllAccomodationes() {
         '&:hover': {
             backgroundColor: '#00565b'
         },
-        width: '100%'
+        width: '100%',
     }));
 
     return (
-        <>
+        <div className="card">
+            <h3 className="table-topic">Room Packages</h3>
+            <hr />
             <Grid container spacing={2}>
                 <Grid item xs={9}>
                     <TextField
                         className="location-search-field"
-                        id="location-search"
-                        label="Search Locations"
+                        id="location-attraction--search"
+                        label="Search Location Attractions"
                         variant="outlined"
                         value={searchText}
-                        onKeyUp={getLocations}
+                        onKeyUp={getLocationAttractions}
                         onChange={handleSearchTextChange}
                     />
                 </Grid>
                 <Grid item xs={3}>
                     <StyledButton className="add-new-location-button" variant="contained"
-                        onClick={navigateToNewLocation}>Add New Accomodation</StyledButton>
+                        onClick={navigateToNewLocationAttraction}>Add New Room Package</StyledButton>
                 </Grid>
             </Grid>
             <hr />
@@ -223,11 +226,11 @@ function AllAccomodationes() {
                                                     return (
                                                         <TableCell key={column.id} align={column.align}>
                                                             <div className="more-action more-action-view"
-                                                                onClick={viewLocation(row.id)}>
+                                                                onClick={viewLocationAttraction(row.id)}>
                                                                 <FaIcons.FaEye />
                                                             </div>
                                                             <div className="more-action more-action-edit"
-                                                                onClick={editLocation(row.id)}>
+                                                                onClick={editLocationAttraction(row.id)}>
                                                                 <FaIcons.FaPencilRuler />
                                                             </div>
                                                         </TableCell>
@@ -266,8 +269,8 @@ function AllAccomodationes() {
                     onRowsPerPageChange={handleChangeRowsPerPage}
                 />
             </Paper>
-        </>
+        </div>
     );
 }
 
-export default AllAccomodationes;
+export default RoomPackagesDataView;

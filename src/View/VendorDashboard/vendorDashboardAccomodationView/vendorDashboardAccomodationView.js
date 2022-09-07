@@ -10,7 +10,7 @@ const vendorDashboardAccomodationView = () => {
         <div className="widgets-dash">
             <Widget />
         </div>
-        <div className='main-section'>
+        <div className='main-section-table'>
             <div className="card dashboard-card">
                 <TextField
                     className="vendor-search-field"

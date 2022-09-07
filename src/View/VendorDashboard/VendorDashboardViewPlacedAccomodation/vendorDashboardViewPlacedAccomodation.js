@@ -1,31 +1,23 @@
 import React from "react";
+import AllAccomodation from "../../../Component/PlacedDataViewTables/accmodationPlacedDataViewTable";
 import NavigationPanel from "../../../Component/NavigationPanelVendorDashboard/NavigationPanelVendor";
-import Widget from "../../../Component/Widget/Widget";
-import TextField from "@mui/material/TextField";
-import AccmodationPlacedDataTable from "../../../Component/PlacedDataViewTables/accmodationPlacedDataViewTable"
-import "./commonPlaced.css"
 
-const vendorDashboardAccomodationView = () => {
-    return <>
-        <NavigationPanel />
-        <div className='main-section-placed'>
-            <div className="card dashboard-card">
-                <TextField
-                    className="vendor-search-field"
-                    margin="normal"
-                    id="vendor-search"
-                    label="Search Vendors"
-                    variant="outlined"
-                />
-                <div className="Accomodation-view-table">
-                    <AccmodationPlacedDataTable />
-                </div>
+function Accomodationes() {
 
+    return (
+        <>
+            <NavigationPanel />
+            <div className="lower-nav-bar">
+                <p className="title">Accomodationes</p>
+                <p className="sub-title">Accomodationes</p>
             </div>
-        </div>
+            <div className='main-section-view'>
+                <div className="card">
+                    <AllAccomodation />
+                </div>
+            </div>
+        </>
+    )
+}
 
-
-    </>;
-};
-
-export default vendorDashboardAccomodationView;
+export default Accomodationes;

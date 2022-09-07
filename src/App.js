@@ -32,7 +32,10 @@ import VendorDashboardAccomodationViewPage from "./View/VendorDashboard/VendorDa
 import VendorDashboardVehicleViewPage from "./View/VendorDashboard/VendorDashboardViewPlacedVehicles/vendorDashboardViewPlacedVehicles";
 import VendorDashboardAccomodationReserveViewPage from "./View/VendorDashboard/Reservation/ViewAccomodationReservation";
 import VendorDashboardVehicleReserveViewPage from "./View/VendorDashboard/Reservation/viewVehicleReservation";
-
+import NewLocation from "../src/View/VendorDashboard/VendorDashboardViewPlacedAccomodation/newAccomodation";
+import ViewSingleLocation from "../src/View/VendorDashboard/VendorDashboardViewPlacedAccomodation/ViewSingleAccomodation";
+import AddRoomDashboard from "../src/View/VendorDashboard/VendorDashboardViewPlacedAccomodation/newRoomAdd.js"
+import AddRoomPackageDashboard from "../src/View/VendorDashboard/VendorDashboardViewPlacedAccomodation/newRoomPackageAdd"
 function App() {
   return (
     <>
@@ -99,6 +102,10 @@ function App() {
           <Route path="/viewPlacedVehicles" element={<VendorDashboardVehicleViewPage />} />
           <Route path="/accomodationReservationView" element={<VendorDashboardAccomodationReserveViewPage />} />
           <Route path="/vehicleReservationView" element={<VendorDashboardVehicleReserveViewPage />} />
+          <Route path="/add-New-Accomodation" element={<NewLocation />} />
+          <Route path='/location/view' element={<ViewSingleLocation />} />
+          <Route path='/Accomodation/Room-Add' element={<AddRoomDashboard />} />
+          <Route path='/Accomodation/Room-Package-Add' element={<AddRoomPackageDashboard />} />
         </Routes>
       </Router>
     </>

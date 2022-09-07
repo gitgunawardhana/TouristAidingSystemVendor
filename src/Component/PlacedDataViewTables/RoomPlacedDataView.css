@@ -1,0 +1,23 @@
+.single-vendor-box {
+  position: relative;
+  width: 90%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.location-search-field {
+  width: 100%;
+}
+.add-new-location-button {
+  background-color: #00565b;
+  width: 100%;
+}
+
+.table-topic {
+  font-size: 1.17em;
+}
