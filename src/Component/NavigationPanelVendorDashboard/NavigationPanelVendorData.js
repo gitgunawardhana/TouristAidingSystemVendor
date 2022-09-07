@@ -24,8 +24,8 @@ export const NavigationPanelVendorData = [
     path: '/locations',
     icon: <img src={Addicon} alt="Locations Icon" className="nav-bar-icon" />,
     subItems: [
-      { title: 'Accomodation', path: '/configurations/driver-fare' },
-      { title: 'Vehicle', path: '/configurations/vehicle-types' },
+      { title: 'Accomodation', path: '/viewPlacedAccomodations' },
+      { title: 'Vehicle', path: '/viewPlacedVehicles' },
     ]
   },
   {
@@ -33,8 +33,8 @@ export const NavigationPanelVendorData = [
     path: '/locations',
     icon: <img src={Addicon} alt="Locations Icon" className="nav-bar-icon" />,
     subItems: [
-      { title: 'Accomodation', path: '/configurations/driver-fare' },
-      { title: 'Vehicle', path: '/configurations/vehicle-types' },
+      { title: 'Accomodation', path: '/accomodationReservationView' },
+      { title: 'Vehicle', path: '/vehicleReservationView' },
     ]
   },
 

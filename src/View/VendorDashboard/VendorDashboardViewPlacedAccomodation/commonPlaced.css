@@ -1,0 +1,7 @@
+.main-section-placed {
+  position: absolute;
+  top: -50px;
+  left: 270px;
+  width: calc(100% - 300px);
+  height: calc(100% - 130px);
+}

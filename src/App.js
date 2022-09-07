@@ -28,6 +28,10 @@ import Paymentmethods from "../src/View/profile/paymentDetails"
 import Security from "../src/View/profile/security"
 import NotificationSettings from "../src/View/profile/notificationes"
 import AddNewVehicle from "./View/VendorDashboard/AddNewVehicle/addNewVehicle.js";
+import VendorDashboardAccomodationViewPage from "./View/VendorDashboard/VendorDashboardViewPlacedAccomodation/vendorDashboardViewPlacedAccomodation.js";
+import VendorDashboardVehicleViewPage from "./View/VendorDashboard/VendorDashboardViewPlacedVehicles/vendorDashboardViewPlacedVehicles";
+import VendorDashboardAccomodationReserveViewPage from "./View/VendorDashboard/Reservation/ViewAccomodationReservation";
+import VendorDashboardVehicleReserveViewPage from "./View/VendorDashboard/Reservation/viewVehicleReservation";
 
 function App() {
   return (
@@ -91,6 +95,10 @@ function App() {
           <Route path="/security" element={<Security />} />
           <Route path="/notificationSettings" element={<NotificationSettings />} />
           <Route path="/addNewVehicle" element={<AddNewVehicle />} />
+          <Route path="/viewPlacedAccomodations" element={<VendorDashboardAccomodationViewPage />} />
+          <Route path="/viewPlacedVehicles" element={<VendorDashboardVehicleViewPage />} />
+          <Route path="/accomodationReservationView" element={<VendorDashboardAccomodationReserveViewPage />} />
+          <Route path="/vehicleReservationView" element={<VendorDashboardVehicleReserveViewPage />} />
         </Routes>
       </Router>
     </>
