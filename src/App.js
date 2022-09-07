@@ -23,6 +23,10 @@ import AddRoom from "../src/Component/VendorDashboard/AddRoom/AddRoom";
 import AccommodationRegistrationLocation from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
 import VendorType from "./View/VenderType/VenderType";
 import VendorDashboardVehicleBookingsView from "./View/VendorDashboard/vendorDashboardVehicleBookingsView.js";
+import Profie from "../src/View/profile/profile"
+import Paymentmethods from "../src/View/profile/paymentDetails"
+import Security from "../src/View/profile/security"
+import NotificationSettings from "../src/View/profile/notificationes"
 
 function App() {
   return (
@@ -81,6 +85,10 @@ function App() {
             element={<AccommodationRegistrationHouseRules />}
           />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
+          <Route path="/profile" element={<Profie />} />
+          <Route path="/paymentDetails" element={<Paymentmethods />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/notificationSettings" element={<NotificationSettings />} />
         </Routes>
       </Router>
     </>

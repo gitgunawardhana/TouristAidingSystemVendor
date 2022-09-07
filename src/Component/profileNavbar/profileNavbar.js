@@ -2,12 +2,17 @@ import { Link, useLocation } from "react-router-dom";
 import profile from "../../Assets/Profile/Squa1.png";
 import ROADSIGN from "../../Assets/ROADSIGNnavbar.png";
 import "./profileNavbar.css";
+import { useNavigate } from "react-router";
 
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navbar() {
     const location = useLocation();
     const currentPath = location.pathname;
+    const navigate = useNavigate();
+    const navigateToMainDashboard = () => {
+        navigate('/vendorDashBoardMain');
+    };
 
     return (
         <div className="navigationBar">
@@ -154,7 +159,7 @@ function Navbar() {
 
                     {/* <!-- Right elements --> */}
                     <div className="text-center sign-out-pc-view">
-                        <button type="button" class="text-center btn-sign-out">
+                        <button onClick={navigateToMainDashboard} type="button" class="text-center btn-sign-out">
                             Back
                         </button>
                     </div>
