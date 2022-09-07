@@ -28,9 +28,25 @@
   color: #61dafb;
 }
 
-.main-section {
+.main-section-view {
   position: absolute;
   top: 130px;
+  left: 270px;
+  width: calc(100% - 300px);
+  height: calc(100% - 130px);
+}
+
+.main-section-table {
+  position: absolute;
+  top: 300px;
+  left: 270px;
+  width: calc(100% - 300px);
+  height: calc(100% - 130px);
+}
+
+.main-section {
+  position: absolute;
+  top: 110px;
   left: 270px;
   width: calc(100% - 300px);
   height: calc(100% - 130px);
@@ -57,6 +73,49 @@
   padding: 10px;
   margin: 20px 0px;
   margin-top: 170px;
+}
+
+.lower-nav-bar {
+  position: fixed;
+  z-index: 997;
+  left: 250px;
+  top: 60px;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title-box {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.title {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00565b;
+}
+
+.sub-title {
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: lighter;
+  color: black;
+  margin-top: -5px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0px;
 }
 
 @keyframes App-logo-spin {

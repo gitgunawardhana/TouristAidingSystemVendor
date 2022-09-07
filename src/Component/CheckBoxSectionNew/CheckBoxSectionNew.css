@@ -1,0 +1,18 @@
+.checkbox-section1 label .MuiTypography-root {
+  max-width: 187px !important;
+  text-align: left !important;
+  font-weight: 500;
+  color: #353535e0 !important;
+}
+
+.checkbox-section1 .MuiFormControlLabel-root {
+  margin-bottom: 5px;
+}
+
+.checkbox-section1 {
+  width: 200px !important;
+}
+
+.checkbox-section1-new {
+  margin-left: 300px;
+}

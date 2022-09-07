@@ -1,0 +1,29 @@
+.location-form {
+  position: relative;
+  width: 90%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.create-accommodation-button {
+  width: 50%;
+  margin-left: 25%;
+  background-color: #00565b;
+}
+
+.image-upload-hidden {
+  visibility: hidden;
+}
+
+.image-upload-visible {
+  visibility: visible;
+}
+
+.topics {
+  font-size: 1.17em;
+}

@@ -2,15 +2,13 @@ import React from "react";
 import NavigationPanel from "../../../Component/NavigationPanelVendorDashboard/NavigationPanelVendor";
 import Widget from "../../../Component/Widget/Widget";
 import TextField from "@mui/material/TextField";
-import AccomodationViewTable from "../../../Component/AccomodationViewTable/AccomodationViewTable.js"
+import AccomodationReservationDataTable from "../../../Component/ReservationTables/accomodationReservationTable"
+import "../VendorDashboardViewPlacedAccomodation/commonPlaced.css"
 
-const VendorAccommodationView = () => {
+const vendorDashboardAccomodationView = () => {
     return <>
         <NavigationPanel />
-        <div className="widgets-dash">
-            <Widget />
-        </div>
-        <div className='main-section-table'>
+        <div className='main-section-placed'>
             <div className="card dashboard-card">
                 <TextField
                     className="vendor-search-field"
@@ -20,7 +18,7 @@ const VendorAccommodationView = () => {
                     variant="outlined"
                 />
                 <div className="Accomodation-view-table">
-                    <AccomodationViewTable />
+                    <AccomodationReservationDataTable />
                 </div>
 
             </div>
@@ -30,4 +28,4 @@ const VendorAccommodationView = () => {
     </>;
 };
 
-export default VendorAccommodationView;
+export default vendorDashboardAccomodationView;
