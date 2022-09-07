@@ -19,9 +19,18 @@ import Swal from "sweetalert2";
 import dayjs, { Dayjs } from 'dayjs';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import Stack from '@mui/material/Stack';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 
 function NewForm() {
+    const [value, setValue] = React.useState(dayjs('2014-08-18T21:11:54'));
+    const handleChange = (newValue) => {
+        setValue(newValue);
+    };
 
 
 
@@ -291,6 +300,22 @@ function NewForm() {
                             type="text"
                             onChange={handleLongitudeChange}
                             sx={{ m: 1, width: '32%' }} />
+                        <LocalizationProvider dateAdapter={AdapterDayjs}>
+                            <TimePicker
+                                label="Check-in Time"
+                                value={value}
+                                onChange={handleChange}
+                                renderInput={(params) => <TextField {...params}
+                                    sx={{ m: 1, width: '31%' }} />}
+                            />
+                            <TimePicker
+                                label="Check-out Time"
+                                value={value}
+                                onChange={handleChange}
+                                renderInput={(params) => <TextField {...params}
+                                    sx={{ m: 1, width: '32%' }} />}
+                            />
+                        </LocalizationProvider>
 
                     </div>
                 </Box>

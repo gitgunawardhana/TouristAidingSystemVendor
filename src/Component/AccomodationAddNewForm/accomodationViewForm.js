@@ -165,6 +165,18 @@ function ViewForm(props) {
                             InputProps={{
                                 readOnly: true,
                             }}
+                            sx={{ m: 1, width: '31%' }} />
+                        <TextField id="longitude" label="Check-in Time" type="text"
+                            value={longitude}
+                            InputProps={{
+                                readOnly: true,
+                            }}
+                            sx={{ m: 1, width: '32%' }} />
+                        <TextField id="longitude" label="Check-out Time" type="text"
+                            value={longitude}
+                            InputProps={{
+                                readOnly: true,
+                            }}
                             sx={{ m: 1, width: '32%' }} />
                     </div>
                 </Box>
