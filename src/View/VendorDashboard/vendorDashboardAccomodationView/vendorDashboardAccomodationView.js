@@ -4,7 +4,7 @@ import Widget from "../../../Component/Widget/Widget";
 import TextField from "@mui/material/TextField";
 import AccomodationViewTable from "../../../Component/AccomodationViewTable/AccomodationViewTable.js"
 
-const vendorDashboardAccomodationView = () => {
+const VendorAccommodationView = () => {
     return <>
         <NavigationPanel />
         <div className="widgets-dash">
@@ -30,4 +30,4 @@ const vendorDashboardAccomodationView = () => {
     </>;
 };
 
-export default vendorDashboardAccomodationView;
+export default VendorAccommodationView;
