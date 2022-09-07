@@ -6,11 +6,7 @@ import VehicleRegInfo from "../src/View/VehicleRegistrationInfo/VehicleRegistrat
 import VehicleRegPhotos from "../src/View/VehicleRegistrationPhoto/VehicleRegistrationPhoto.js";
 import VehicleRegVehicle from "../src/View/VehicleRegistrationVehicleDetails/VehicleDetails.js";
 import "./App.css";
-import Profile from "./View/profile/profile";
-import PaymentDetails from "./View/profile/paymentDetails";
-import Security from "./View/profile/security";
-import Notificationes from "./View/profile/notificationes";
-import VendorDashboardVehicleBookingsView from "../src/View/VendorDashboard/vendorDashboardVehicleBookingsView";
+import DashboardMain from "./View/VendorDashboard/Dashboard";
 import EmailVerification from "./Component/CreateAccount/SecondPage/EmailVerification";
 import RegPageNavbar from "./Component/RegistrationPageNavbar/RegPageNavbar";
 import AccommodationRegistrationBasicDetails from "./View/AccommodationRegistrationBasicDetails/AccommodationRegistrationBasicDetails";
@@ -20,14 +16,18 @@ import AccommodationRegistrationPhotos from "./View/AccommodationRegistrationPho
 import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
-import DashboardMain from "./View/VendorDashboard/Dashboard";
+import VendorDashboardAccomodationView from "../src/View/VendorDashboard/vendorDashboardAccomodationView/vendorDashboardAccomodationView";
+// import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
 import VehicleRegDriverInfo from "../src/View/VehicleRegDriverDetails/VehicleRegDriverDetails.js";
-import AddRoom from "./Component/VendorDashboard/AddRoom/AddRoom";
+import AddRoom from "../src/Component/VendorDashboard/AddRoom/AddRoom";
 import AccommodationRegistrationLocation from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";
 import VendorType from "./View/VenderType/VenderType";
-import VendorAccommodationView
-  from "./View/VendorDashboard/vendorDashboardAccomodationView/vendorDashboardAccomodationView";
-
+import VendorDashboardVehicleBookingsView from "./View/VendorDashboard/vendorDashboardVehicleBookingsView.js";
+import Profie from "../src/View/profile/profile"
+import Paymentmethods from "../src/View/profile/paymentDetails"
+import Security from "../src/View/profile/security"
+import NotificationSettings from "../src/View/profile/notificationes"
+import AddNewVehicle from "./View/VendorDashboard/AddNewVehicle/addNewVehicle.js";
 
 function App() {
   return (
@@ -36,21 +36,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/vendorDashBoardMain" element={<DashboardMain />} />
-
-          <Route
-            path="//configurations/add-accommodation"
-            element={<AddRoom />}
-          />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/paymentDetails" element={<PaymentDetails />} />
-          <Route path="/security" element={<Security />} />
-          <Route path="/notificationSettings" element={<Notificationes />} />
-          <Route path="/vendorDashboardAccomodationView" element={<VendorAccommodationView/>} />
-          <Route path="/VendorDashboardVehicleBookingsView" element={<VendorDashboardVehicleBookingsView />} />
+          <Route path="/vendorDashboardAccomodationView" element={<VendorDashboardAccomodationView />} />
           <Route path="/createAccount" element={<CreateAccount />} />
           <Route path="/emailVerification" element={<EmailVerification />} />
+          <Route path="/VendorDashboardVehicleBookingsView" element={<VendorDashboardVehicleBookingsView />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/vendor-type" element={<VendorType />} />
+          <Route
+            path="/configurations/add-accommodation"
+            element={<AddRoom />}
+          />
           <Route
             path="/basicDetails"
             element={<AccommodationRegistrationBasicDetails />}
@@ -91,6 +86,11 @@ function App() {
             element={<AccommodationRegistrationHouseRules />}
           />
           <Route path="/regPageNavbar" element={<RegPageNavbar />} />
+          <Route path="/profile" element={<Profie />} />
+          <Route path="/paymentDetails" element={<Paymentmethods />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/notificationSettings" element={<NotificationSettings />} />
+          <Route path="/addNewVehicle" element={<AddNewVehicle />} />
         </Routes>
       </Router>
     </>

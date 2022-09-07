@@ -2,12 +2,17 @@ import { Link, useLocation } from "react-router-dom";
 import profile from "../../Assets/Profile/Squa1.png";
 import ROADSIGN from "../../Assets/ROADSIGNnavbar.png";
 import "./profileNavbar.css";
+import { useNavigate } from "react-router";
 
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navbar() {
     const location = useLocation();
     const currentPath = location.pathname;
+    const navigate = useNavigate();
+    const navigateToMainDashboard = () => {
+        navigate('/vendorDashBoardMain');
+    };
 
     return (
         <div className="navigationBar">
@@ -112,49 +117,12 @@ function Navbar() {
                             {/*</ul>*/}
                         </div>
                         {/* <!-- Notifications --> */}
-                        <div className="notification-bel">
-                            <div className="dropdown">
-                                <Link
-                                    className="text-reset me-3 dropdown-toggle align-items-center hidden-arrow"
-                                    to=""
-                                    id="navbarDropdownMenuLink"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-expanded="x"
-                                >
-                                    <i className="fas fa-bell"></i>
-                                    <span className="badge rounded-pill badge-notification bg-danger">
-                                        1
-                                    </span>
-                                </Link>
 
-                                {/*<ul*/}
-                                {/*  className="dropdown-menu dropdown-menu-end"*/}
-                                {/*  aria-labelledby="navbarDropdownMenuLink"*/}
-                                {/*>*/}
-                                {/*  <li>*/}
-                                {/*    <Link className="dropdown-item" to="#">*/}
-                                {/*      Some news*/}
-                                {/*    </Link>*/}
-                                {/*  </li>*/}
-                                {/*  <li>*/}
-                                {/*    <Link className="dropdown-item" to="#">*/}
-                                {/*      Another news*/}
-                                {/*    </Link>*/}
-                                {/*  </li>*/}
-                                {/*  <li>*/}
-                                {/*    <Link className="dropdown-item" to="#">*/}
-                                {/*      Something else here*/}
-                                {/*    </Link>*/}
-                                {/*  </li>*/}
-                                {/*</ul>*/}
-                            </div>
-                        </div>
                     </div>
 
                     {/* <!-- Right elements --> */}
                     <div className="text-center sign-out-pc-view">
-                        <button type="button" class="text-center btn-sign-out">
+                        <button onClick={navigateToMainDashboard} type="button" class="text-center btn-sign-out">
                             Back
                         </button>
                     </div>
