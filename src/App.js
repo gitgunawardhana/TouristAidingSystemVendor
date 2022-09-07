@@ -17,7 +17,6 @@ import CreateAccount from "./View/CreateAccount/CreateAccount";
 import Main from "./View/Main/Main";
 import SignIn from "./View/SignIn/SignIn";
 import VendorDashboardAccomodationView from "../src/View/VendorDashboard/vendorDashboardAccomodationView/vendorDashboardAccomodationView";
-// import VehicleRegOwnerInfo from '../src/View/VehicleRegistrationOwnerInfo/VehicleRegOwnerInfo.js'
 import VehicleRegDriverInfo from "../src/View/VehicleRegDriverDetails/VehicleRegDriverDetails.js";
 import AddRoom from "../src/Component/VendorDashboard/AddRoom/AddRoom";
 import AccommodationRegistrationLocation from "./View/AccommodationRegistrationLocation/AccommodationRegistrationLocation";

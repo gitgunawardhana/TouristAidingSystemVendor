@@ -105,15 +105,15 @@ function NavigationPanel() {
                         <img src={PowerOffIcon} alt="" />
                         <h5>Sign out</h5>
                     </div> */}
-                    <div className="sign-out-dashboard">
-                        <Grid container spacing={0} className="navigation-item">
-                            <Grid item xs={2}>
+                    <div className="sign-out-dashboard " >
+                        <Grid container spacing={0} className="navigation-item ">
+                            <Grid item xs={2} >
                                 <img src={PowerOffIcon} alt="" className="power-img" />
                             </Grid>
 
 
                             <Grid item xs={9}>
-                                <Link to={"./Dashboard"} className="navigation-item-link">
+                                <Link to={"/"} className="navigation-item-link ">
                                     <h5>Sign Out</h5>
                                 </Link>
                             </Grid>

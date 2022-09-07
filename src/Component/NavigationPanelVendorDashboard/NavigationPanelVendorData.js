@@ -12,7 +12,7 @@ export const NavigationPanelVendorData = [
   },
   {
     title: 'Add New',
-    path: '/locations',
+    path: "",
     icon: <img src={Addicon} alt="Locations Icon" className="nav-bar-icon" />,
     subItems: [
       { title: "Accomodation", path: "/configurations/add-accommodation" },
@@ -21,7 +21,7 @@ export const NavigationPanelVendorData = [
   },
   {
     title: 'View',
-    path: '/locations',
+    path: '',
     icon: <img src={Addicon} alt="Locations Icon" className="nav-bar-icon" />,
     subItems: [
       { title: 'Accomodation', path: '/configurations/driver-fare' },
@@ -30,7 +30,7 @@ export const NavigationPanelVendorData = [
   },
   {
     title: 'Reservations',
-    path: '/locations',
+    path: '',
     icon: <img src={Addicon} alt="Locations Icon" className="nav-bar-icon" />,
     subItems: [
       { title: 'Accomodation', path: '/configurations/driver-fare' },

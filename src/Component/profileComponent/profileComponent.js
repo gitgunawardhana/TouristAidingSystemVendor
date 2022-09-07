@@ -8,11 +8,7 @@ const profileComponent = () => {
     return <>
         <div className="notify-dashboard">
             {/* <!-- Right elements --> */}
-            <div className="d-flex align-items-center" >
-                {/* <!-- Icon --> */}
-                {/*<Link className="text-reset me-3" to="#">*/}
-                {/*  <i className="fas fa-shopping-cart"></i>*/}
-                {/*</a>*/}
+            <div className="d-flex align-items-center icon-ml" >
 
                 {/* <!-- Avatar --> */}
                 <div className="dropdown mr-3 col-lg-6">
@@ -49,26 +45,7 @@ const profileComponent = () => {
                         </NavDropdown>
                     </div>
 
-                    {/*<ul*/}
-                    {/*  className="dropdown-menu dropdown-menu-end"*/}
-                    {/*  aria-labelledby="navbarDropdownMenuAvatar"*/}
-                    {/*>*/}
-                    {/*  <li>*/}
-                    {/*    <Link className="dropdown-item" to="#">*/}
-                    {/*      My profile*/}
-                    {/*    </Link>*/}
-                    {/*  </li>*/}
-                    {/*  <li>*/}
-                    {/*    <Link className="dropdown-item" to="/accountSettings">*/}
-                    {/*      Settings*/}
-                    {/*    </Link>*/}
-                    {/*  </li>*/}
-                    {/*  <li>*/}
-                    {/*    <Link className="dropdown-item" to="#">*/}
-                    {/*      Logout*/}
-                    {/*    </Link>*/}
-                    {/*  </li>*/}
-                    {/*</ul>*/}
+
                 </div>
                 {/* <!-- Notifications --> */}
 

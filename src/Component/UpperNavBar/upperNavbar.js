@@ -5,7 +5,7 @@ import ProfileComponent from "../profileComponent/profileComponent";
 const upperNavbar = () => {
     return <>
         <div className="upper-nav-bar-alone">
-            <div className="profile-component"><ProfileComponent /></div>
+            <div className="profile-component "><ProfileComponent /></div>
 
             <span className="upper-heading">
                 ROADSIGN
