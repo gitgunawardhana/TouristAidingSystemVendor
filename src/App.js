@@ -27,6 +27,7 @@ import Profie from "../src/View/profile/profile"
 import Paymentmethods from "../src/View/profile/paymentDetails"
 import Security from "../src/View/profile/security"
 import NotificationSettings from "../src/View/profile/notificationes"
+import AddNewVehicle from "./View/VendorDashboard/AddNewVehicle/addNewVehicle.js";
 
 function App() {
   return (
@@ -89,6 +90,7 @@ function App() {
           <Route path="/paymentDetails" element={<Paymentmethods />} />
           <Route path="/security" element={<Security />} />
           <Route path="/notificationSettings" element={<NotificationSettings />} />
+          <Route path="/addNewVehicle" element={<AddNewVehicle />} />
         </Routes>
       </Router>
     </>

@@ -16,7 +16,7 @@ export const NavigationPanelVendorData = [
     icon: <img src={Addicon} alt="Locations Icon" className="nav-bar-icon" />,
     subItems: [
       { title: "Accomodation", path: "/configurations/add-accommodation" },
-      { title: 'Vehicle', path: '/configurations/vehicle-types' },
+      { title: 'Vehicle', path: '/addNewVehicle' },
     ]
   },
   {

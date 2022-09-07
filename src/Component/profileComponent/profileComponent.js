@@ -8,7 +8,7 @@ const profileComponent = () => {
     return <>
         <div className="notify-dashboard">
             {/* <!-- Right elements --> */}
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center" >
                 {/* <!-- Icon --> */}
                 {/*<Link className="text-reset me-3" to="#">*/}
                 {/*  <i className="fas fa-shopping-cart"></i>*/}
@@ -71,44 +71,7 @@ const profileComponent = () => {
                     {/*</ul>*/}
                 </div>
                 {/* <!-- Notifications --> */}
-                <div className="notification-bel">
-                    <div className="dropdown">
-                        <Link
-                            className="text-reset me-3 dropdown-toggle align-items-center hidden-arrow"
-                            to=""
-                            id="navbarDropdownMenuLink"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-expanded="x"
-                        >
-                            <i className="fas fa-bell"></i>
-                            <span className="badge rounded-pill badge-notification bg-danger">
-                                1
-                            </span>
-                        </Link>
 
-                        {/*<ul*/}
-                        {/*  className="dropdown-menu dropdown-menu-end"*/}
-                        {/*  aria-labelledby="navbarDropdownMenuLink"*/}
-                        {/*>*/}
-                        {/*  <li>*/}
-                        {/*    <Link className="dropdown-item" to="#">*/}
-                        {/*      Some news*/}
-                        {/*    </Link>*/}
-                        {/*  </li>*/}
-                        {/*  <li>*/}
-                        {/*    <Link className="dropdown-item" to="#">*/}
-                        {/*      Another news*/}
-                        {/*    </Link>*/}
-                        {/*  </li>*/}
-                        {/*  <li>*/}
-                        {/*    <Link className="dropdown-item" to="#">*/}
-                        {/*      Something else here*/}
-                        {/*    </Link>*/}
-                        {/*  </li>*/}
-                        {/*</ul>*/}
-                    </div>
-                </div>
             </div>
 
             {/* <!-- Right elements --> */}
