@@ -35,7 +35,7 @@ function App() {
             element={<VendorDashboardAccomodationView />}
           />
           <Route
-            path="//configurations/add-accommodation"
+            path="/configurations/add-accommodation"
             element={<AddRoom />}
           />
           <Route path="/createAccount" element={<CreateAccount />} />
