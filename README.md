@@ -2,6 +2,12 @@
 
 The Vendor Panel is a crucial module of the Tourist Aiding System, designed to empower local businesses and vendors in Sri Lanka. This panel allows vendors to manage their services, view bookings, and interact with customers efficiently.
 
+## Sub-Projects Repositories
+
+- [Main Panel Repository](https://github.com/gitgunawardhana/TouristAidingSystemFrontEnd): Repository for the main panel module.
+- [Admin Panel Repository](https://github.com/gitgunawardhana/tourism-aiding-system-admin): Repository for the admin panel module.
+- [Backend Repository](https://github.com/gitgunawardhana/tourism-aiding-system-backend): Repository for the backend module.
+
 ## Features
 
 - **Service Management**: Add, update, or remove services offered by your business.
