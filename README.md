@@ -4,7 +4,7 @@ The Vendor Panel is a crucial module of the Tourist Aiding System, designed to e
 
 ## Sub-Projects Repositories
 
-- [Main Panel Repository](https://github.com/gitgunawardhana/TouristAidingSystemFrontEnd): Repository for the main panel module.
+- [Main Repository](https://github.com/gitgunawardhana/TouristAidingSystemFrontEnd): Repository for the main module.
 - [Admin Panel Repository](https://github.com/gitgunawardhana/tourism-aiding-system-admin): Repository for the admin panel module.
 - [Backend Repository](https://github.com/gitgunawardhana/tourism-aiding-system-backend): Repository for the backend module.
 
